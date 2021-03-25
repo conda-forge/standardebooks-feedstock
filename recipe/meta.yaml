@@ -22,17 +22,17 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - cairosvg ==2.5.1
+    - cairosvg ==2.5.2
     - chardet ==3.0.4
     - cssselect ==1.1.0
     - cssutils ==1.0.2
     - ftfy ==5.8
     - gitpython ==3.1.11
     - importlib_resources ==1.0.2
-    - lxml ==4.6.2
+    - lxml ==4.6.3
     - natsort ==7.1.0
-    - pillow ==8.0.1
-    - psutil ==5.7.3
+    - pillow ==8.1.1
+    - psutil ==5.8.0
     - pyopenssl ==20.0.0
     - pyphen ==0.10.0
     - python >=3.6
