@@ -60,7 +60,7 @@ about:
   home: https://standardebooks.org
   summary: The toolset used to produce Standard Ebooks epub ebooks.
   dev_url: https://github.com/standardebooks/tools/
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE.md
   description: |
