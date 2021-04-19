@@ -1,5 +1,5 @@
 {% set name = "standardebooks" %}
-{% set version = "1.9.2" %}
+{% set version = "1.9.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/standardebooks-{{ version }}.tar.gz
-  sha256: a9732c4f611f1bc3a4f12531014ed80ec6fba92a55ec0fb6b68ace02e34518cc
+  sha256: 4dbed425cfab17b8dfa9a474413622c2f9a32f1f4277baa1ebed594e080c1f44
 
 build:
   number: 0
@@ -60,9 +60,9 @@ about:
   home: https://standardebooks.org
   summary: The toolset used to produce Standard Ebooks epub ebooks.
   dev_url: https://github.com/standardebooks/tools/
-  license: BSD-3-Clause
-  license_family: BSD
-  license_file: se/data/epubcheck/LICENSE.txt
+  license: GPL-3.0-or-later
+  license_family: GPL
+  license_file: LICENSE.md
   description: |
     A collection of tools Standard Ebooks uses to produce its ebooks,
      including basic setup of ebooks, text processing, and build tools.
