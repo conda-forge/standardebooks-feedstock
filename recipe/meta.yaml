@@ -1,5 +1,5 @@
 {% set name = "standardebooks" %}
-{% set version = "1.9.1" %}
+{% set version = "1.9.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/standardebooks-{{ version }}.tar.gz
-  sha256: bd2eaac0edfad34a8c200cbfb0c7e362eae18f28ef4b796efc20d4c1904fd38d
+  sha256: a9732c4f611f1bc3a4f12531014ed80ec6fba92a55ec0fb6b68ace02e34518cc
 
 build:
   number: 0
@@ -44,6 +44,7 @@ requirements:
     - smartypants ==2.0.1
     - tinycss2 ==1.1.0
     - titlecase ==0.13.0
+    - unidecode ==1.2.0
 
 test:
   imports:
