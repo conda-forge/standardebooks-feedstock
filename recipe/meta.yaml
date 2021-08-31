@@ -23,27 +23,27 @@ requirements:
     - python >=3.6
   run:
     - cairosvg ==2.5.2
-    - chardet ==3.0.4
+    - chardet ==4.0.0
     - cssselect ==1.1.0
-    - cssutils ==1.0.2
-    - ftfy ==5.8
-    - gitpython ==3.1.11
+    - cssutils ==2.3.0
+    - ftfy ==6.0.3
+    - gitpython ==3.1.18
     - importlib_resources ==1.0.2
     - lxml ==4.6.3
-    - natsort ==7.1.0
-    - pillow ==8.2.0
+    - natsort ==7.1.1
+    - pillow ==8.3.1
     - psutil ==5.8.0
     - pyopenssl ==20.0.0
-    - pyphen ==0.10.0
+    - pyphen ==0.11.0
     - python >=3.6
-    - regex ==2020.11.13
-    - requests ==2.25.0
-    - rich ==9.4.0
+    - regex ==2021.08.28
+    - requests ==2.26.0
+    - rich ==10.9.0
     - roman ==3.3.0
     - selenium ==3.141.0
     - smartypants ==2.0.1
     - tinycss2 ==1.1.0
-    - titlecase ==0.13.0
+    - titlecase ==2.3
     - unidecode ==1.2.0
 
 test:
