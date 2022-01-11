@@ -51,10 +51,14 @@ test:
     - se
     - se.commands
   commands:
-    - pip check
     - se --help
+    - pytest -vvv tests
+  source_files:
+    - tests
   requires:
     - pip
+    - pytest
+    - pytest-sugar
 
 about:
   home: https://standardebooks.org
