@@ -11,7 +11,7 @@ source:
   sha256: 369a09c30c317b2a10eeaed3376fb9c94b19ac442661fededed7e5783e3c1f92
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - se = se.main:main
@@ -27,11 +27,11 @@ requirements:
     - cssselect ==1.1.0
     - cssutils ==2.3.0
     - ftfy ==6.0.3
-    - gitpython ==3.1.18
+    - gitpython ==3.1.11
     - importlib_resources ==1.0.2
     - lxml ==4.6.3
     - natsort ==7.1.1
-    - pillow ==8.3.1
+    - pillow ==8.3.2
     - psutil ==5.8.0
     - pyopenssl ==20.0.0
     - pyphen ==0.11.0
@@ -51,10 +51,10 @@ test:
     - se
     - se.commands
   commands:
-#     - pip check
     - se --help
-#   requires:
-#     - pip
+    - pip list | grep -E '{{ name }}\s+{{ version }}'
+  requires:
+    - pip
 
 about:
   home: https://standardebooks.org
