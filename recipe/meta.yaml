@@ -52,13 +52,9 @@ test:
     - se.commands
   commands:
     - se --help
-    - pytest -vvv tests
-  source_files:
-    - tests
+    - pip list | grep -E '{{ name }}\s+{{ version }}'
   requires:
     - pip
-    - pytest
-    - pytest-sugar
 
 about:
   home: https://standardebooks.org
