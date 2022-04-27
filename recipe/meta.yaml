@@ -1,5 +1,5 @@
 {% set name = "standardebooks" %}
-{% set version = "2.3.6" %}
+{% set version = "2.3.9" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/standardebooks-{{ version }}.tar.gz
-  sha256: 29dfcf01ae20ff7af9c5797e5239e2cad7f6047fc11214afd3a0cca3a53d4aa8
+  sha256: 97202dc2b9efd1dcd1cdaffb0a1fe97cb8f98ad597ec00442eafa3efda8f04c3
 
 build:
   number: 0
