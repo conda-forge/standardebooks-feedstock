@@ -1,5 +1,5 @@
 {% set name = "standardebooks" %}
-{% set version = "2.3.10" %}
+{% set version = "2.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/standardebooks-{{ version }}.tar.gz
-  sha256: 3b74316ee9b391fd66e806f66e311f3bc324e3ebfb88a97e3dc7337e7fa4bacd
+  sha256: f5a22df0feb9b70b7cd09a58a9f70eeff92a2a87246f4e1a8220ec4110a86f14
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - ftfy ==6.0.3
     - gitpython ==3.1.11
     - importlib_resources ==1.0.2
-    - lxml ==4.6.5
+    - lxml ==4.9.1
     - natsort ==7.1.1
     - pillow ==8.4.0
     - psutil ==5.8.0
@@ -48,15 +48,6 @@ requirements:
 test:
   imports:
     - se
-    - se.commands
-    - se.data
-    - se.data.epubcheck
-    - se.data.templates
-    - se.data.vnu
-    - se.vendor
-    - se.vendor.kindleunpack
-    - se.vendor.kobo_touch_extended
-    - se.vendor.mobi
   commands:
     - se --help
     - pip list | grep -E '{{ name }}\s+{{ version }}'
