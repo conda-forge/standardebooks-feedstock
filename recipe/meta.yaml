@@ -29,7 +29,7 @@ requirements:
     - ftfy ==6.0.3
     - gitpython ==3.1.11
     - importlib_resources ==1.0.2
-    - lxml ==4.6.5
+    - lxml ==4.9.1
     - natsort ==7.1.1
     - pillow ==8.4.0
     - psutil ==5.8.0
@@ -48,15 +48,6 @@ requirements:
 test:
   imports:
     - se
-    - se.commands
-    - se.data
-    - se.data.epubcheck
-    - se.data.templates
-    - se.data.vnu
-    - se.vendor
-    - se.vendor.kindleunpack
-    - se.vendor.kobo_touch_extended
-    - se.vendor.mobi
   commands:
     - se --help
     - pip list | grep -E '{{ name }}\s+{{ version }}'
