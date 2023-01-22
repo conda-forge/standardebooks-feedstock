@@ -11,7 +11,7 @@ source:
   sha256: d47ce7ccfa10a0d9315334cbb41851da4c5e07333e1219df2174fa86f2f687c0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - se = se.main:main
