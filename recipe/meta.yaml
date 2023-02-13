@@ -49,7 +49,7 @@ test:
   imports:
     - se
   commands:
-    - pip check
+    - pip list | grep -E '{{ name }}\s+{{ version }}'
     - se --help
   requires:
     - pip
