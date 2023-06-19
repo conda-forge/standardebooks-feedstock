@@ -1,11 +1,11 @@
-About standardebooks
-====================
+About standardebooks-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/standardebooks-feedstock/blob/main/LICENSE.txt)
 
 Home: https://standardebooks.org
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/standardebooks-feedstock/blob/main/LICENSE.txt)
 
 Summary: The toolset used to produce Standard Ebooks epub ebooks.
 
