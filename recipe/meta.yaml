@@ -1,5 +1,5 @@
 {% set name = "standardebooks" %}
-{% set version = "2.6.0" %}
+{% set version = "2.6.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/standardebooks-{{ version }}.tar.gz
-  sha256: 09c8bac117ca5ad1db589ef3aff6beb2770873566dfe913e85bc5603e69143c3
+  sha256: 09020bcd76d120234c09737b856be41fc64437acec38f0791f31dcac22d06dea
 
 build:
   number: 0
@@ -25,20 +25,20 @@ requirements:
     - cairosvg ==2.7.0
     - chardet ==5.1.0
     - cssselect ==1.2.0
-    - cssutils ==2.6.0
+    - cssutils ==2.7.1
     - ftfy ==6.0.3
-    - gitpython ==3.1.30
+    - gitpython ==3.1.32
     - importlib_resources ==1.0.2
-    - lxml ==4.9.2
-    - natsort ==8.3.1
-    - pillow ==9.5.0
-    - psutil ==5.9.4
+    - lxml ==4.9.3
+    - natsort ==8.4.0
+    - pillow ==10.0.0
+    - psutil ==5.9.5
     - pyphen ==0.14.0
     - python >=3.7
-    - regex ==2022.10.31
+    - regex ==2023.6.3
     - requests ==2.31.0
-    - rich ==13.3.5
-    - roman ==4.0
+    - rich ==13.4.2
+    - roman ==4.1
     - selenium ==4.9.0
     - smartypants ==2.0.1
     - tinycss2 ==1.2.1
