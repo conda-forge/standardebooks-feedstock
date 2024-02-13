@@ -20,9 +20,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.8,<=3.12
   run:
-    - python >=3.8
+    - python >=3.8,<=3.12
     - cairosvg ==2.7.1
     - chardet ==5.2.0
     - cssselect ==1.2.0
