@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python >=3.10,<=3.12
     - setuptools ==70.0.0
   run:
-    - python >=3.10
+    - python >=3.10,<=3.12
     - cairosvg ==2.7.1
     - chardet ==5.2.0
     - cssselect ==1.2.0
