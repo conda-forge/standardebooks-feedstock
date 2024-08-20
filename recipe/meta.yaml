@@ -1,5 +1,5 @@
 {% set name = "standardebooks" %}
-{% set version = "2.7.0" %}
+{% set version = "2.7.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/standardebooks-{{ version }}.tar.gz
-  sha256: 831b276b92c7ce5ce0082c6825472b2271f87ed1b5c0143d1db6381f63016946
+  sha256: 5b4a06d9f48272ca192588084fc32c631f7e25eb6022b87f1155966f12410759
 
 build:
   number: 0
@@ -20,17 +20,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python >=3.10.12,<=3.12.4
     - setuptools ==70.0.0
   run:
-    - python >=3.10
+    - python >=3.10.12,<=3.12.4
     - cairosvg ==2.7.1
     - chardet ==5.2.0
     - cssselect ==1.2.0
     - cssutils ==2.9.0
     - ftfy >=6.0.3
     - gitpython ==3.1.41
-    - importlib_resources
+    - importlib_resources >=1.0.2
     - lxml ==4.9.3
     - natsort ==8.4.0
     - pillow ==10.3.0
