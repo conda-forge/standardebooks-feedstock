@@ -25,7 +25,7 @@ requirements:
   run:
     - python >=3.10.12,<=3.12.4
     - cairosvg ==2.7.1
-    - chardet ==5.2.0
+    - chardet >=5.2.0
     - cssselect ==1.2.0
     - cssutils ==2.9.0
     - ftfy >=6.0.3
