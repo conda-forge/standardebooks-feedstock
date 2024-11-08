@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/standardebooks-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/standardebooks-{{ version }}.tar.gz
   sha256: a858d3c26187847f7fbd4924762914d3cad80b8cf7c6f2b702998fd279e074a2
 
 build:
@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10.12,<=3.12.4
+    - python {{ python_min }}.*
     - setuptools ==70.0.0
   run:
-    - python >=3.10.12,<=3.12.4
+    - python >={{ python_min }}
     - cairosvg ==2.7.1
     - chardet ==5.2.0
     - cssselect ==1.2.0
@@ -56,6 +56,7 @@ test:
     - se --help
   requires:
     - pip
+    - python ={{ python_min }}
 
 about:
   home: https://standardebooks.org
