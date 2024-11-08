@@ -1,5 +1,5 @@
 {% set name = "standardebooks" %}
-{% set version = "2.7.1" %}
+{% set version = "2.7.2" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/standardebooks-{{ version }}.tar.gz
-  sha256: 5b4a06d9f48272ca192588084fc32c631f7e25eb6022b87f1155966f12410759
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/standardebooks-{{ version }}.tar.gz
+  sha256: a858d3c26187847f7fbd4924762914d3cad80b8cf7c6f2b702998fd279e074a2
 
 build:
   number: 0
@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10.12,<=3.12.4
+    - python {{ python_min }}
     - setuptools ==70.0.0
   run:
-    - python >=3.10.12,<=3.12.4
+    - python >={{ python_min }}
     - cairosvg ==2.7.1
     - chardet ==5.2.0
     - cssselect ==1.2.0
@@ -56,6 +56,7 @@ test:
     - se --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://standardebooks.org
