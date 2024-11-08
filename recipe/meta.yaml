@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - python {{ python_min }}.*
+    - python {{ python_min }}
     - setuptools ==70.0.0
   run:
     - python >={{ python_min }}
@@ -56,7 +56,7 @@ test:
     - se --help
   requires:
     - pip
-    - python ={{ python_min }}
+    - python {{ python_min }}
 
 about:
   home: https://standardebooks.org
