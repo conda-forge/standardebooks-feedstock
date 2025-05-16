@@ -41,7 +41,7 @@ requirements:
     - requests ==2.32.3
     - rich ==14.0.0
     - roman ==5.0
-    - selenium ==4.31.0
+    - selenium >=4.31.0
     - setuptools ==78.1.0
     - smartypants ==2.0.1
     - tinycss2 ==1.4.0
