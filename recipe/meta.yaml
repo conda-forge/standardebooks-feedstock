@@ -1,5 +1,6 @@
 {% set name = "standardebooks" %}
-{% set version = "2.7.4" %}
+{% set version = "2.7.5" %}
+{% set python_min = "3.10" %}
 
 
 package:
@@ -8,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/standardebooks-{{ version }}.tar.gz
-  sha256: 0b2dfb38a18d916d0b76d8433b8f4c5d1ebf0f284b1a6b1ebab3df31cf737853
+  sha256: ad87225db87b6c074f2855bc95d669d3002aaa67c1e26f01f1a99968b3bb9144
 
 build:
   number: 0
@@ -21,31 +22,31 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools ==70.0.0
+    - setuptools ==78.1.0
   run:
     - python >={{ python_min }}
     - cairosvg ==2.7.1
     - chardet ==5.2.0
-    - cssselect ==1.2.0
-    - cssutils ==2.9.0
-    - ftfy >=6.0.3
-    - gitpython ==3.1.41
+    - cssselect ==1.3.0
+    - cssutils ==2.11.1
+    - ftfy ==6.3.1
+    - gitpython ==3.1.44
     - importlib_resources >=1.0.2
-    - lxml ==4.9.3
+    - lxml ==5.3.2
     - natsort ==8.4.0
-    - pillow ==10.3.0
-    - psutil ==5.9.6
-    - pyphen ==0.14.0
-    - regex ==2023.10.3
-    - requests >=2.32.0
-    - rich ==13.7.0
-    - roman ==4.1
-    - selenium ==4.9.0
+    - pillow ==11.2.1
+    - psutil ==7.0.0
+    - pyphen ==0.17.2
+    - regex >=2024.11.6
+    - requests ==2.32.3
+    - rich ==14.0.0
+    - roman ==5.0
+    - selenium >=4.31.0
+    - setuptools ==78.1.0
     - smartypants ==2.0.1
-    - setuptools ==70.0.0
-    - tinycss2 ==1.2.1
-    - titlecase ==2.4
-    - unidecode ==1.3.7
+    - tinycss2 ==1.4.0
+    - titlecase ==2.4.1
+    - unidecode ==1.3.8
 
 test:
   imports:
