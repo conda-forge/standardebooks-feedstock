@@ -37,7 +37,7 @@ requirements:
     - pillow ==11.2.1
     - psutil ==7.0.0
     - pyphen ==0.17.2
-    - regex ==2024.11.6
+    - regex >=2024.11.6
     - requests ==2.32.3
     - rich ==14.0.0
     - roman ==5.0
