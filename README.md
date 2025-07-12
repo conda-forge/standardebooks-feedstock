@@ -3,7 +3,7 @@ About standardebooks-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/standardebooks-feedstock/blob/main/LICENSE.txt)
 
-Home: https://standardebooks.org
+Home: https://standardebooks.org/
 
 Package license: GPL-3.0-or-later
 
@@ -12,11 +12,10 @@ Summary: The toolset used to produce Standard Ebooks epub ebooks.
 Development: https://github.com/standardebooks/tools/
 
 A collection of tools Standard Ebooks uses to produce its ebooks,
- including basic setup of ebooks, text processing, and build tools.
+including basic setup of ebooks, text processing, and build tools.
 Installing this toolset using pipx or conda makes the se command
- line executable available. Its various commands are described below,
- or you can use se help to list them.
-
+line executable available. Its various commands are described below,
+or you can use se help to list them.
 
 Current build status
 ====================
