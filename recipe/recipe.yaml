@@ -24,7 +24,7 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools ==78.1.1
+    - setuptools ==80.9.0
   run:
     - python >=${{ python_min }}
     - cairosvg ==2.8.2
