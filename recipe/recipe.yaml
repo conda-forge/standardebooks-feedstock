@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: standardebooks
-  version: "2.11.1"
+  version: "2.11.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/standardebooks-${{ version }}.tar.gz
-  sha256: 0670656c1ee9a42791683275eeda957c8210c8c19c0534251f3e18608802fc02
+  sha256: 305e65a0a806d3369ed03d9bd36303eaaf0d8f981758e208117a32cba7f049a0
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools ==78.1.1
+    - setuptools ==80.9.0
   run:
     - python >=${{ python_min }}
     - cairosvg ==2.8.2
