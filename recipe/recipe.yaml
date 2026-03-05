@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: standardebooks
-  version: "2.11.2"
+  version: "3.0.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/standardebooks-${{ version }}.tar.gz
-  sha256: 305e65a0a806d3369ed03d9bd36303eaaf0d8f981758e208117a32cba7f049a0
+  sha256: 7fb8b2d81b0d7db36114963a15ac924e19f786779d455504c08f1ccdb93c8fb0
 
 build:
   number: 0
