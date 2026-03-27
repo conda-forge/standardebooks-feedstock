@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: standardebooks
-  version: "3.0.2"
+  version: "3.0.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/standardebooks-${{ version }}.tar.gz
-  sha256: 754fd4c2c9850d264c2ffeae3b7e9af9a984e750d40a460384431b2dc522ba03
+  sha256: f794b71758892532609111b225a2b8c38c6c6e12c60b9d596c4f435a912183f6
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - setuptools ==80.9.0
   run:
     - python >=${{ python_min }}
-    - cairosvg ==2.8.2
+    - cairosvg ==2.9.0
     - chardet ==5.2.0
     - cssselect ==1.4.0
     - cssutils ==2.11.1
@@ -58,7 +58,9 @@ tests:
         - se
       # Selanium and regex pin too tight, use more relased pins and skip pip check
       pip_check: false
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
