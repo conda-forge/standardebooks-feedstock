@@ -27,7 +27,7 @@ requirements:
     - setuptools ==80.9.0
   run:
     - python >=${{ python_min }}
-    - cairosvg ==2.8.2
+    - cairosvg ==2.9.0
     - chardet ==5.2.0
     - cssselect ==1.4.0
     - cssutils ==2.11.1
@@ -58,7 +58,9 @@ tests:
         - se
       # Selanium and regex pin too tight, use more relased pins and skip pip check
       pip_check: false
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
