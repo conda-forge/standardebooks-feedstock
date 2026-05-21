@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: standardebooks
-  version: "3.0.3"
+  version: "3.0.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/standardebooks-${{ version }}.tar.gz
-  sha256: f794b71758892532609111b225a2b8c38c6c6e12c60b9d596c4f435a912183f6
+  sha256: 47166b17c72bc94685bafb1a54ca94a66f2795771fef5fe7e07461a8a6a0c9e8
 
 build:
   number: 0
@@ -32,17 +32,17 @@ requirements:
     - cssselect ==1.4.0
     - cssutils ==2.11.1
     - ftfy ==6.3.1
-    - gitpython ==3.1.46
+    - gitpython ==3.1.50
     - importlib_resources >=1.0.2
-    - lxml ==6.0.2
+    - lxml ==6.1.0
     - natsort ==8.4.0
-    - pillow ==12.1.1
+    - pillow ==12.2.0
     - psutil ==7.2.2
-    - pyoxipng ==9.1.1
     - pyphen ==0.17.2
+    - pyoxipng ==9.1.1
     - regex ==2026.2.28
     - repro-zipfile ==0.4.1
-    - requests ==2.32.5
+    - requests ==2.33.0
     - rich ==14.3.3
     - roman ==5.2
     - selenium ==4.41.0
