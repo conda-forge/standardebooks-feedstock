@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: standardebooks
-  version: "3.0.4"
+  version: "3.0.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/standardebooks-${{ version }}.tar.gz
-  sha256: 47166b17c72bc94685bafb1a54ca94a66f2795771fef5fe7e07461a8a6a0c9e8
+  sha256: 2cb81707a82ba026a193b82066c86b40b28980a890642677bfeb38e0efc52196
 
 build:
   number: 0
@@ -39,7 +39,7 @@ requirements:
     - pillow ==12.2.0
     - psutil ==7.2.2
     - pyphen ==0.17.2
-    - pyoxipng ==9.1.1
+    - oxipng-pybind ==10.1.1.post2
     - regex ==2026.2.28
     - repro-zipfile ==0.4.1
     - requests ==2.33.0
