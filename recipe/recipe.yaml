@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: standardebooks
-  version: "3.2.0"
+  version: "4.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/standardebooks-${{ version }}.tar.gz
-  sha256: a2a685a3616276b130e82b9c45d9208d41ff04b8383e5653b9b132d310703e2e
+  sha256: 29ade25bd3114395dda50fcb9551ceeda1e1af43dd442e27a6ca9ee42213ae12
 
 build:
   number: 0
@@ -24,29 +24,29 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools ==80.9.0
+    - setuptools ==82.0.1
   run:
     - python >=${{ python_min }}
     - cairosvg ==2.9.0
-    - chardet ==5.2.0
+    - chardet ==7.4.3
     - cssselect ==1.4.0
-    - cssutils ==2.11.1
+    - cssutils ==2.15.0
     - ftfy ==6.3.1
     - gitpython ==3.1.50
     - importlib_resources >=1.0.2
-    - lxml ==6.1.0
+    - lxml ==6.1.1
     - natsort ==8.4.0
     - pillow ==12.2.0
     - psutil ==7.2.2
     - pyphen ==0.17.2
     - oxipng-pybind ==10.1.1.post2
-    - regex ==2026.2.28
+    - regex ==2026.6.28
     - repro-zipfile ==0.4.1
-    - requests ==2.33.0
-    - rich ==14.3.3
+    - requests ==2.34.2
+    - rich ==15.0.0
     - roman ==5.2
-    - selenium ==4.41.0
-    - setuptools ==80.9.0
+    - selenium ==4.45.0
+    - setuptools ==82.0.1
     - smartypants ==2.0.2
     - tinycss2 ==1.5.1
     - titlecase ==2.4.1
