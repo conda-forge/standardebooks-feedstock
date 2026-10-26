@@ -24,7 +24,7 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools ==82.0.1
+    - setuptools ==83.0.0
   run:
     - python >=${{ python_min }}
     - cairosvg ==2.9.0
@@ -32,11 +32,11 @@ requirements:
     - cssselect ==1.4.0
     - cssutils ==2.15.0
     - ftfy ==6.3.1
-    - gitpython ==3.1.50
-    - importlib_resources >=1.0.2
+    - gitpython ==3.1.54
+    - installed_browsers ==0.1.5
     - lxml ==6.1.1
     - natsort ==8.4.0
-    - pillow ==12.2.0
+    - pillow ==12.3.0
     - psutil ==7.2.2
     - pyphen ==0.17.2
     - oxipng-pybind ==10.1.1.post2
@@ -46,7 +46,7 @@ requirements:
     - rich ==15.0.0
     - roman ==5.2
     - selenium ==4.45.0
-    - setuptools ==82.0.1
+    - setuptools ==83.0.0
     - smartypants ==2.0.2
     - tinycss2 ==1.5.1
     - titlecase ==2.4.1
@@ -56,8 +56,7 @@ tests:
   - python:
       imports:
         - se
-      # Selanium and regex pin too tight, use more relased pins and skip pip check
-      pip_check: false
+      pip_check: true
       python_version:
         - ${{ python_min }}.*
         - "*"
