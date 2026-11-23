@@ -7,3 +7,6 @@ conda_build:
   pkg_format: '2'
 bot:
   inspection: hint-grayskull
+noarch_platforms:
+  - linux_64
+  - win_64
